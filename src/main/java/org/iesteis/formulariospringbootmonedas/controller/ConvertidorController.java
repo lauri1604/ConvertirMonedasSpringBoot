@@ -1,6 +1,6 @@
-package org.dam.formulariospringbootuser.controller;
+package org.iesteis.formulariospringbootmonedas.controller;
 
-import org.dam.formulariospringbootuser.service.CambioService;
+import org.iesteis.formulariospringbootmonedas.service.CambioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,12 +15,17 @@ public class ConvertidorController {
     @Autowired
     private CambioService cambioService;
 
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+
     @GetMapping("/convertir")
     public String mostrarFormulario() {
         return "index";
     }
 
-    @PostMapping("/convertir")
+    @PostMapping("/conversion")
     public String convertir(
             @RequestParam float importe,
             @RequestParam String origen,

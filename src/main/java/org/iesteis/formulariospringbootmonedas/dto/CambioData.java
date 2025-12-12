@@ -1,4 +1,4 @@
-package org.dam.formulariospringbootuser.dto;
+package org.iesteis.formulariospringbootmonedas.dto;
 
 import lombok.Getter;
 import lombok.Setter;
