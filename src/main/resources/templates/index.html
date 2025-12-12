@@ -1,0 +1,30 @@
+<form id="convForm" action="/convertir" method="post">
+    <div class="row">
+        <label for="importe">importe</label>
+        <input id="importe" name="importe" type="number" step="0.01" min="0" value="0.0" />
+    </div>
+
+    <div class="row">
+        <label for="origen">Moneda origen:</label>
+        <select id="origen" name="origen">
+            <option value="GBP" selected>Libra esterlina</option>
+            <option value="EUR">Euro</option>
+            <option value="JPY">Yen</option>
+            <option value="USD">Dolar USA</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <label for="destino">Moneda destino:</label>
+        <select id="destino" name="destino">
+            <option value="EUR" selected>Euro</option>
+            <option value="GBP">Libra esterlina</option>
+            <option value="JPY">Yen</option>
+            <option value="USD">Dolar USA</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <button type="submit">Enviar</button>
+    </div>
+</form>
